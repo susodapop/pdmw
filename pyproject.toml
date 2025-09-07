@@ -1,0 +1,26 @@
+[project]
+name = "pdmw"
+version = "0.1.0"
+description = "Personal Data Manager (Whitehouse)"
+authors = [
+    {name = "Jesse Whitehouse",email = "jesse@whitehouse.dev"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "flask (>=3.1.2,<4.0.0)",
+    "sqlalchemy (>=2.0.43,<3.0.0)",
+    "htpy (>=25.8.1,<26.0.0)",
+    "flask-sqlalchemy (>=3.1.1,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+pytest = "^8.4.2"
+
